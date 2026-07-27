@@ -10,16 +10,18 @@ const Sections = () => {
 
   return (
     <div>
-      <nav>
-        <button onClick={() => setActive("aboutMe")}>About me</button>
-        <button onClick={() => setActive("projects")}>Projects</button>
-        <button onClick={() => setActive("workMethods")}>Work methods</button>
+      <nav className='font-bold text-gray-50 '>
+        <button className={`hover:text-cyan-400 ${active === "aboutMe" ? "text-sky-300 underline" : ""}`} onClick={() => setActive("aboutMe")}>About me</button>
+        <button className={`hover:text-cyan-400 ${active === "projects" ? "text-sky-300 underline" : ""}`} onClick={() => setActive("projects")}>Projects</button>
+        <button className={`hover:text-cyan-400 ${active === "workMethods" ? "text-sky-300 underline" : ""}`} onClick={() => setActive("workMethods")}>Work methods</button>
       </nav>
 
-      <main>
-        {active === "aboutMe" && <Aboutme />}
-        {active === "projects" && <Projects />}
-        {active === "workMethods" && <WorkMethods />}
+      <main className='text-gray-50'>
+        <div>
+          {active === "aboutMe" && <Aboutme />}
+          {active === "projects" && <Projects />}
+          {active === "workMethods" && <WorkMethods />}
+        </div>
       </main>
     </div>
   )

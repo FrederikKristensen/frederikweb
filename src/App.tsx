@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import Sections from './components/Sections';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <span className='font-bold'>Linkedin: </span>
         <a className='text-blue-300 underline underline-offset-2 hover:text-sky-500' href='https://www.linkedin.com/in/frederik-kristensen-94a689198/'>Linkedin.com/in/frederik-kristensen</a>
       </h3>
+      <Sections />
     </>
   )
 }

@@ -1,9 +1,21 @@
 
 const Aboutme = () => {
   return (
-    <div>
-      <p></p>Aboutme
-      <p>test1</p>
+    <div >
+      <ul className='disc'>
+        <li>From Jyllinge, City near Roskilde
+        </li>
+
+        <li>Hobbies
+          <ul>
+            <li>Videogames</li>
+            <li>Gym</li>
+            <li>Hanging out and deep talks</li>
+          </ul>
+        </li>
+
+
+      </ul>
     </div>
   )
 }

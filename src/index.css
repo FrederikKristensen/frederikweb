@@ -3,3 +3,19 @@
 :root {
   background-color: #242424;
 }
+
+ul {
+  @apply list-inside;
+}
+
+ul ul {
+  @apply ml-10;
+}
+
+ul.disc {
+  @apply list-disc font-semibold;
+}
+
+ul.square {
+  @apply list-[square] font-normal;
+}

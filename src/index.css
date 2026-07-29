@@ -4,6 +4,10 @@
   background-color: #242424;
 }
 
+h3 {
+  @apply text-gray-50;
+}
+
 ul {
   @apply list-inside;
 }

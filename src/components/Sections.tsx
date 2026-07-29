@@ -16,7 +16,7 @@ const Sections = () => {
         <button className={`hover:text-cyan-400 ${active === "workMethods" ? "text-sky-300 underline" : ""}`} onClick={() => setActive("workMethods")}>Work methods</button>
       </nav>
 
-      <main className='pt-1 text-gray-50'>
+      <main className='w-fit mx-auto pt-3 text-gray-50'>
         <div>
           {active === "aboutMe" && <Aboutme />}
           {active === "projects" && <Projects />}

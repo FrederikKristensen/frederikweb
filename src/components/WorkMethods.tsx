@@ -1,9 +1,9 @@
 
 const WorkMethods = () => {
   return (
-    <div >
-      <ul className='disc'>
-        <li>Website tools
+    <div>
+      <ul className='grid grid-cols-3 gap-x-11 gap-y-3 disc'>
+        <li className='col-span-3 md:col-span-1'>Website tools
           <ul className='square'>
             <li>Html</li>
             <li>CSS
@@ -12,7 +12,6 @@ const WorkMethods = () => {
                 <li>- Bootstrap</li>
               </ul>
             </li>
-
             <li>JavaScript
               <ul>
                 <li>- React</li>
@@ -22,7 +21,7 @@ const WorkMethods = () => {
           </ul>
         </li>
 
-        <li>Developer Tools
+        <li className='col-span-3 md:col-span-1'>Developer Tools
           <ul className='square'>
             <li>Vite</li>
             <li>Prettier</li>
@@ -30,7 +29,7 @@ const WorkMethods = () => {
           </ul>
         </li>
 
-        <li>Minor Experience
+        <li className='col-span-3 md:col-span-1'>Minor Experience
           <ul className='square'>
             <li>Python</li>
             <li>Vue.js</li>

@@ -1,39 +1,35 @@
 
 const Aboutme = () => {
   return (
-    <div >
-      <ul className='disc'>
-        <li>From Jyllinge
+    <div>
+      <ul className='grid grid-cols-2 gap-y-1 disc'>
+        <li className='col-span-2 md:col-span-1'>Info
           <ul className='square'>
-            <li>City near Roskilde</li>
+            <li>From Jyllinge (City near Roskilde)</li>
+            <li>I am 28 years old</li>
           </ul>
         </li>
 
-        <li>Hobbies
+        <li className='col-span-2 md:col-span-1'>Hobbies
           <ul className='square'>
             <li>Videogames</li>
             <li>Gym</li>
-            <li>Being with friends</li>
+            <li>Fan of punk rock and techno music</li>
           </ul>
         </li>
 
-        <li>Educations
+        <li className='col-span-2 md:col-span-1'>Educations
           <ul className='square'>
             <li>Zealand, Roskilde - Academy of Technologies and Business</li>
-            <li>16/9 2019 - 31/1 2022</li>
             <li>HTX, Roskilde - Highschool</li>
-            <li>2015 - 2018</li>
           </ul>
         </li>
 
-        <li>Experience
+        <li className='col-span-2 md:col-span-1'>Experience
           <ul className='square'>
             <li>Q8 - Sales assistant</li>
-            <li>Sep 2023 - Sep 2025</li>
             <li>TP Aerospace - Intern</li>
-            <li>Aug 2021 - Nov 2021</li>
             <li>Roskilde Kommune - On-call substitute</li>
-            <li>Jan 2019 - Sep 2019</li>
           </ul>
         </li>
       </ul>

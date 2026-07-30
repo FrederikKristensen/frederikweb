@@ -5,6 +5,7 @@ const Aboutme = () => {
       <ul className='grid grid-cols-2 gap-y-1 disc'>
         <li className='col-span-2 md:col-span-1'>Info
           <ul className='square'>
+            <li>From Denmark</li>
             <li>From Jyllinge (City near Roskilde)</li>
             <li>I am 28 years old</li>
           </ul>

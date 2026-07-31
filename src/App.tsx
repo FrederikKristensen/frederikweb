@@ -8,9 +8,9 @@ function App() {
 
   return (
     <>
-      <div className='grid grid-flow-col grid-cols-5 mb-5'>
-        <div className='col-span-3'>
-          <h1 className='leading-none font-bold text-3xl text-gray-50 '>Frederik Kristensen</h1>
+      <div className='grid grid-flow-col grid-cols-5 mb-5 ml-10'>
+        <div className='col-span-3 mt-8'>
+          <h1 className='leading-none font-bold text-3xl text-gray-50'>Frederik Kristensen</h1>
           <h2 className='leading-none ml-6 font-semibold text-lg text-cyan-400'>Web developer</h2>
           <div className=' mt-5 ml-5 mb-4 space-y-3'>
             <h3 className='flex items-center gap-1.5'>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  background-color: #242424;
+  @apply min-h-screen bg-linear-to-tr  from-slate-800 to-gray-600;
 }
 
 h3 {

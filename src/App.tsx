@@ -17,16 +17,16 @@ function App() {
   };
 
   return (
-    <main className='max-w-7xl mx-auto'>
-      <div className='grid grid-flow-col grid-cols-5 mb-5 mt-18'>
+    <main className='md:max-w-2xl lg:max-w-3xl xl:max-w-7xl mt-14 mx-auto'>
+      <div className='grid grid-flow-col grid-cols-5 mb-5'>
         <div className='col-span-3 mt-8'>
           <h1 className='leading-none font-bold text-7xl text-gray-50'>Frederik Kristensen</h1>
           <h2 className='leading-none ml-6 font-semibold text-3xl text-cyan-400'>Web developer</h2>
-          <div className='mt-9 ml-5 mb-4 space-y-6'>
+          <div className='mt-9 ml-5 space-y-6'>
             <h3 className='flex items-center gap-1.5'>
-              <MdEmail className='text-4xl'/>
+              <MdEmail className='shrink-0 md:text-xl lg:text-3xl xl:text-4xl'/>
               <span className='text-2xl font-bold'>Email: </span>
-              <button className='text-2xl inline-flex gap-0.5' onClick={copyEmail}>
+              <button className='shrink-0 text-2xl inline-flex gap-0.5' onClick={copyEmail}>
                 frede4947@gmail.com<FaRegCopy className='text-base' />
               </button>
               <div className='text-xs'>
@@ -34,19 +34,19 @@ function App() {
               </div>
             </h3>
             <h3 className='flex items-center gap-1.5'>
-              <FaGithub className='text-4xl'/>
+              <FaGithub className='shrink-0 md:text-xl lg:text-3xl xl:text-4xl'/>
               <span className='text-2xl font-bold'>Github:</span>
-              <a className='text-2xl text-blue-300 underline underline-offset-2 hover:text-sky-500' href='https://github.com/FrederikKristensen'>Github.com/FrederikKristensen</a>
+              <a className='shrink-0 text-2xl text-blue-300 underline underline-offset-2 hover:text-sky-500' href='https://github.com/FrederikKristensen'>Github.com/FrederikKristensen</a>
             </h3>
             <h3 className='flex items-center gap-1.5'>
-              <FaLinkedin className='text-4xl'/>
+              <FaLinkedin className='shrink-0 md:text-xl lg:text-3xl xl:text-4xl'/>
               <span className='text-2xl font-bold'>Linkedin: </span>
-              <a className='text-2xl text-blue-300 underline underline-offset-2 hover:text-sky-500' href='https://www.linkedin.com/in/frederik-kristensen-94a689198/'>Linkedin.com/in/frederik-kristensen</a>
+              <a className='shrink-0 text-2xl text-blue-300 underline underline-offset-2 hover:text-sky-500' href='https://www.linkedin.com/in/frederik-kristensen-94a689198/'>Linkedin.com/in/frederik-kristensen</a>
             </h3>
         </div>
         </div>
         <div className='col-span-2'>
-          <img src={profilepicture} alt='Picture of me' className='size-90 object-cover rounded-full' />
+          <img src={profilepicture} alt='Picture of me' className='md:size-67 lg:size-80 xl:size-90 object-cover rounded-full' />
         </div>
       </div>
       <Sections />

@@ -2,8 +2,8 @@
 const Aboutme = () => {
   return (
     <div>
-      <ul className='grid grid-cols-2 gap-y-1 disc'>
-        <li className='col-span-2 md:col-span-1'>Info
+      <ul className='grid grid-cols-2 gap-y-5 disc'>
+        <li className='col-span-3 lg:col-span-1'>Info
           <ul className='square'>
             <li>From Denmark</li>
             <li>From Jyllinge (City near Roskilde)</li>
@@ -11,7 +11,7 @@ const Aboutme = () => {
           </ul>
         </li>
 
-        <li className='col-span-2 md:col-span-1'>Hobbies
+        <li className='col-span-3 lg:col-span-1'>Hobbies
           <ul className='square'>
             <li>Videogames</li>
             <li>Gym</li>
@@ -19,14 +19,14 @@ const Aboutme = () => {
           </ul>
         </li>
 
-        <li className='col-span-2 md:col-span-1'>Educations
+        <li className='col-span-3 lg:col-span-1'>Educations
           <ul className='square'>
             <li>Zealand, Roskilde - Academy of Technologies and Business</li>
             <li>HTX, Roskilde - Highschool</li>
           </ul>
         </li>
 
-        <li className='col-span-2 md:col-span-1'>Experience
+        <li className='col-span-3 lg:col-span-1'>Experience
           <ul className='square'>
             <li>Q8 - Sales assistant</li>
             <li>TP Aerospace - Intern</li>

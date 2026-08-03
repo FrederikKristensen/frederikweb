@@ -1,10 +1,20 @@
 import './App.css';
 import Sections from './components/Sections';
 import { MdEmail } from 'react-icons/md';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaRegCopy } from 'react-icons/fa';
 import profilepicture from './assets/picture.jpg';
+import { useState } from 'react';
 
 function App() {
+  const [copied, setCopied] = useState(false);
+
+  const copyEmail = async () => {
+    await navigator.clipboard.writeText('frede4947@gmail.com');
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 1000);
+  };
 
   return (
     <>
@@ -15,7 +25,13 @@ function App() {
           <div className=' mt-5 ml-5 mb-4 space-y-3'>
             <h3 className='flex items-center gap-1.5'>
               <MdEmail className='text-2xl'/>
-              <span className='font-bold'>Email: </span>frede4947@gmail.com
+              <span className='font-bold'>Email: </span>
+              <button className='inline-flex gap-0.5' onClick={copyEmail}>
+                frede4947@gmail.com<FaRegCopy className='text-xs' />
+              </button>
+              <div className='text-xs'>
+                {copied ? "Copied!" : ""}
+              </div>
             </h3>
             <h3 className='flex items-center gap-1.5'>
               <FaGithub className='text-2xl'/>

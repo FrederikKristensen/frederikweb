@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  @apply min-h-screen bg-linear-to-tr  from-slate-800 to-gray-600;
+  @apply min-h-screen bg-linear-to-tr  from-slate-800 to-gray-500;
 }
 
 h3 {
@@ -13,13 +13,13 @@ ul {
 }
 
 ul ul {
-  @apply ml-10 text-sm;
+  @apply ml-8 text-lg;
 }
 
 ul.disc {
-  @apply list-disc font-semibold;
+  @apply list-disc font-semibold text-2xl;
 }
 
 ul.square {
-  @apply list-[square] font-normal pb-3;
+  @apply list-[square] font-normal pb-3 text-xl;
 }

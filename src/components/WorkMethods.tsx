@@ -2,7 +2,7 @@
 const WorkMethods = () => {
   return (
     <div>
-      <ul className='grid grid-cols-3 gap-x-11 gap-y-3 disc'>
+      <ul className='grid grid-cols-3 gap-x-18 gap-y-3 disc'>
         <li className='col-span-3 md:col-span-1'>Website tools
           <ul className='square'>
             <li>Html</li>
